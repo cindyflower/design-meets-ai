@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap');
+
+@theme {
+  --font-headline: "Newsreader", serif;
+  --font-body: "Manrope", sans-serif;
+
+  --color-surface: #fcf9f2;
+  --color-surface-container-low: #f6f3ec;
+  --color-surface-container-high: #ebe8e1;
+  --color-surface-container-highest: #e5e2db;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary: #003633;
+  --color-primary-container: #134e4a;
+  --color-tertiary-fixed: #ffdea5;
+  --color-on-tertiary-fixed: #261900;
+  --color-on-surface: #1c1c18;
+  --color-on-surface-variant: #404847;
+  --color-outline-variant: #bfc8c6;
+  --color-error: #ba1a1a;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body;
+  }
+}
+
+.signature-gradient {
+  background: linear-gradient(135deg, #003633 0%, #134e4a 100%);
+}
+
+.glass-nav {
+  background: rgba(252, 249, 242, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
